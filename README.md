@@ -1,5 +1,5 @@
 
-## Testing
+## Executar projeto
 
 ```shell
   yarn
