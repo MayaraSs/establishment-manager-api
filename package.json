@@ -5,16 +5,21 @@
   "main": ".eslintrc.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.ts --max-warnings=0 -c .eslintrc.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "cors": "^2.8.5",
+    "d": "^1.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
+    "prettier": "^2.3.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -23,6 +28,14 @@
     "@types/express": "^4.17.13",
     "@types/helmet": "^4.0.0",
     "@types/node": "^16.3.2",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
   }

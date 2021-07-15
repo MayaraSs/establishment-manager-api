@@ -1,13 +1,12 @@
-import * as dotenv from "dotenv";
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
-import router from "./routes";
+import * as dotenv from 'dotenv';
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import router from './routes';
 
 dotenv.config();
 
-
-const PORT: number = 4000;
+const PORT = 4000;
 
 const app = express();
 
